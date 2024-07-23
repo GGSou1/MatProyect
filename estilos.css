@@ -1,3 +1,4 @@
+
 .body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -69,4 +70,78 @@
     font-size: 18px;
     vertical-align: middle;
     margin-left: 5px;
+    }
+
+.body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+.navbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    background-color: black; /* Nuevo color de fondo negro */
+}
+.navbar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid #ccc; /* línea gris debajo de cada enlace */
+}
+.navbar a:hover {
+    color: #f1f1f1;
+}
+.navbar .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-left: 0; /* Ajuste para que el contenido no se mueva al abrir la barra */
+}
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: relative; /* Ajuste para que el botón esté posicionado correctamente */
+    z-index: 2; /* Asegura que esté encima de la barra de navegación */
+    margin-right: 10px; /* Espacio a la derecha para separar del texto */
+    margin-left: 0; /* Ajuste para mover un poco a la izquierda */
+    float: left; /* Hace que el botón flote a la izquierda dentro del título */
+}
+.header {
+    background-color: #006400; /* Verde oscuro */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+.header .logo {
+    font-size: 18px;
+    vertical-align: middle;
+    margin-left: 5px;
+
 }
